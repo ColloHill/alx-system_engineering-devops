@@ -1,9 +1,4 @@
- #!/usr/bin/env bash
-# This script displays "Holberton School" 10 times
+#!/usr/bin/env bash
+# Displays the PID along with the process name, containing the bash word.
 
-x=10
-until [ $x -lt 1 ]
-do
-	echo "Holberton School"
-	((x-=1))
-done
+pgrep -l "bash"
