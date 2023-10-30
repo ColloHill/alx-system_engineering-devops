@@ -1,9 +1,9 @@
- #!/usr/bin/env bash
-# This script displays "Holberton School" 10 times
+#!/usr/bin/env bash
+# displays Best School 10 times.
 
-x=10
-until [ $x -lt 1 ]
+COUNTER=10
+until [ $COUNTER -lt 1 ]
 do
-	echo "Best School"
-	((x-=1))
+    echo "Best School"
+    (( COUNTER-=1 )) || true
 done
