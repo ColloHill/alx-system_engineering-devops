@@ -14,7 +14,7 @@ ip=$2
 username=$3
 path_to_ssh_key=$4
 
-dissabling strict host key checking
+#dissabling strict host key checking
 
 scp -o "StrictHostKeyChecking=no" -i "$path_to_ssh_key" "$path_to_file" "$username@ip:~/"
 
